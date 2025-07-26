@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+        background-color: antiquewhite;
+       } 
+    </style>
+</head>
+<body>
+    <div>
+    <p id="paragraph">i am a beginner learning</p>
+    <button onclick="changeText()">change</button>
+    </div>
+
+    <script>
+        function changeText() {
+        document.getElementById("paragraph").innerHTML = "javascript";
+    }
+    </script>
+</body>
+</html>

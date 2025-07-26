@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: beige;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: rgb(229, 112, 2);
+            color: rgb(13, 13, 13);
+            width: 40%;
+            height: 20vh;
+            border: none;
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        First number: <input type="number" id="numb1" required>
+        Second number: <input type="number" id="numb2" required>
+
+        <button id="Add" onclick="calcTotal()">add</button>
+
+        <p id="results"></p>
+
+        <script>
+            let numb1 = document.getElementById("numb1");
+            let numb2 = document.getElementById("numb2");
+
+            let total;
+
+            function calcTotal() {
+                let numb11 = parseFloat(numb1.value);
+                let numb22 = parseFloat(numb2.value);
+
+                total = numb11 + numb22;
+
+                document.getElementById("results").innerHTML = "the answer is" + total;
+            }
+        </script>
+    </div>
+
+</body>
+</html>
